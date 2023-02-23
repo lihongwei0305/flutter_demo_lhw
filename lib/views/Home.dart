@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
     { "title":"表单","subtitle":"form","path":"/form" },
     { "title":"选择器","subtitle":"picker","path":"/picker" },
     { "title":"输入框","subtitle":"input","path":"/input" },
+    { "title":"路由跳转","subtitle":"routerJump","path":"/routerJump" },
   ];
 
   @override
