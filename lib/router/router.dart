@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_lhw/views/Button.dart';
-import 'package:flutter_demo_lhw/views/Form.dart';
+import 'package:flutter_demo_lhw/views/Bottom/Button.dart';
+import 'package:flutter_demo_lhw/views/Form/Form.dart';
 import 'package:flutter_demo_lhw/views/Home.dart';
-import 'package:flutter_demo_lhw/views/Picker.dart';
+import 'package:flutter_demo_lhw/views/Input/Input.dart';
+import 'package:flutter_demo_lhw/views/Picker/Picker.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -45,7 +46,14 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const PickerPage();
         },
+      ),
+      GoRoute(
+        path: '/input',
+        builder: (BuildContext context, GoRouterState state) {
+          return const InputPage();
+        },
       )
+
     ],
   );
 
