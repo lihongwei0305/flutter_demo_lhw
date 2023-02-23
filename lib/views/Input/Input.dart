@@ -75,12 +75,42 @@ class _InputPageState extends State<InputPage> {
             ),
             Container(
               height: 40,
+              child: TextField(
+                style: TextStyle(color: Colors.cyanAccent),
+                decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.person),
+                  suffixIcon: Icon(Icons.close_outlined),
+                  labelText: "带图标 input",
+                  border: OutlineInputBorder(),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 40,
               child: CupertinoTextField(
                 placeholder: "IOS风格input",
                 cursorHeight: 25,
                 clearButtonMode: OverlayVisibilityMode.editing,
               ),
-            )
+            ),
+
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 40,
+              child: CupertinoTextField(
+                placeholder: "IOS带图标input",
+                cursorHeight: 25,
+                clearButtonMode: OverlayVisibilityMode.editing,
+                prefix: Icon(Icons.person_4_outlined),
+              ),
+            ),
+
+
           ],
         ),
       ),
