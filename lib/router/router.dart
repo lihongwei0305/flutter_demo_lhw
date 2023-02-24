@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_lhw/views/Bottom/Button.dart';
+import 'package:flutter_demo_lhw/views/Dialog/Dialog.dart';
 import 'package:flutter_demo_lhw/views/Form/Form.dart';
 import 'package:flutter_demo_lhw/views/Home.dart';
 import 'package:flutter_demo_lhw/views/Input/Input.dart';
@@ -62,13 +63,19 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const RouterJump();
         },
-      )
-,
+      ),
       GoRoute(
         name: 'routerJump1',
         path: '/routerJump1',
         builder: (BuildContext context, GoRouterState state) {
           return const RouterJump1();
+        },
+      ),
+      GoRoute(
+        name: 'dialog',
+        path: '/dialog',
+        builder: (BuildContext context, GoRouterState state) {
+          return const DialogPage();
         },
       )
 
