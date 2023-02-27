@@ -18,6 +18,7 @@ class _HomePageState extends State<HomePage> {
     { "title":"路由跳转","subtitle":"routerJump","path":"/routerJump" },
     { "title":"弹框","subtitle":"dialog","path":"/dialog" },
     { "title":"可设置大小的Weiget","subtitle":"sizeBox","path":"/sizebox" },
+    { "title":"底部弹框","subtitle":"bottomSheet","path":"/bottomsheet" },
   ];
 
   @override

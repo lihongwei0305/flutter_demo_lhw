@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_lhw/views/BottomSheet/BottomSheet.dart';
 import 'package:flutter_demo_lhw/views/Button/Button.dart';
 import 'package:flutter_demo_lhw/views/Dialog/Dialog.dart';
 import 'package:flutter_demo_lhw/views/Form/Form.dart';
@@ -85,7 +86,15 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const SizeBoxPage();
         },
+      ),
+      GoRoute(
+        name: 'bottomsheet',
+        path: '/bottomsheet',
+        builder: (BuildContext context, GoRouterState state) {
+          return const BottomSheetPage();
+        },
       )
+
 
 
 
