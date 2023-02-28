@@ -7,6 +7,7 @@ import 'package:flutter_demo_lhw/views/Home.dart';
 import 'package:flutter_demo_lhw/views/Input/Input.dart';
 import 'package:flutter_demo_lhw/views/Picker/Picker.dart';
 import 'package:flutter_demo_lhw/views/SizeBox/SizeBox.dart';
+import 'package:flutter_demo_lhw/views/Toast/Toast.dart';
 import 'package:flutter_demo_lhw/views/routerJump/routerJump.dart';
 import 'package:flutter_demo_lhw/views/routerJump/routerJump1.dart';
 import 'package:go_router/go_router.dart';
@@ -93,7 +94,15 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const BottomSheetPage();
         },
+      ),
+      GoRoute(
+        name: 'toast',
+        path: '/toast',
+        builder: (BuildContext context, GoRouterState state) {
+          return const ToastPage();
+        },
       )
+
 
 
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'router/router.dart';
 
 void main() {
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: AppRouter().router,
+      builder: (context, child) {
+        return EasyLoading.init()(context, child);
+      },
     );
   }
 }

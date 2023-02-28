@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
     { "title":"弹框","subtitle":"dialog","path":"/dialog" },
     { "title":"可设置大小的Weiget","subtitle":"sizeBox","path":"/sizebox" },
     { "title":"底部弹框","subtitle":"bottomSheet","path":"/bottomsheet" },
+    { "title":"轻提示","subtitle":"toast","path":"/toast" },
   ];
 
   @override
