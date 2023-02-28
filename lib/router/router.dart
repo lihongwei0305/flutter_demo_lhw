@@ -5,6 +5,7 @@ import 'package:flutter_demo_lhw/views/Dialog/Dialog.dart';
 import 'package:flutter_demo_lhw/views/Form/Form.dart';
 import 'package:flutter_demo_lhw/views/Home.dart';
 import 'package:flutter_demo_lhw/views/Input/Input.dart';
+import 'package:flutter_demo_lhw/views/Other/other.dart';
 import 'package:flutter_demo_lhw/views/Picker/Picker.dart';
 import 'package:flutter_demo_lhw/views/SizeBox/SizeBox.dart';
 import 'package:flutter_demo_lhw/views/Toast/Toast.dart';
@@ -101,7 +102,15 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const ToastPage();
         },
+      ),
+      GoRoute(
+        name: 'other',
+        path: '/other',
+        builder: (BuildContext context, GoRouterState state) {
+          return const OtherPage();
+        },
       )
+
 
 
 
