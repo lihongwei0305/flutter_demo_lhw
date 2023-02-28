@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
     {"title": "底部弹框", "subtitle": "bottomSheet", "path": "/bottomsheet"},
     {"title": "轻提示", "subtitle": "toast", "path": "/toast"},
     {"title": "其他", "subtitle": "other", "path": "/other"},
+    {"title": "TabBarView", "subtitle": "TabBarView", "path": "/tabbarview"},
   ];
 
   @override
