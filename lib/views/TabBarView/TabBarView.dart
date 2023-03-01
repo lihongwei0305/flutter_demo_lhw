@@ -12,6 +12,8 @@ class _TabBarViewPageState extends State<TabBarViewPage> {
   final ScrollController _homeController = ScrollController();
   List list = [
     {"title": "TabBarView1", "subtitle": "TabBarView1", "path": "/tabbarview1"},
+    {"title": "TabBarView2", "subtitle": "DefaultTabController", "path": "/tabbarview2"},
+    {"title": "TabBarView3", "subtitle": "动态tabs", "path": "/tabbarview3"},
   ];
 
   @override

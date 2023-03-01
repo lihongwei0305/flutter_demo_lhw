@@ -10,6 +10,8 @@ import 'package:flutter_demo_lhw/views/Picker/Picker.dart';
 import 'package:flutter_demo_lhw/views/SizeBox/SizeBox.dart';
 import 'package:flutter_demo_lhw/views/TabBarView/TabBarView.dart';
 import 'package:flutter_demo_lhw/views/TabBarView/TabBarView1.dart';
+import 'package:flutter_demo_lhw/views/TabBarView/TabBarView2.dart';
+import 'package:flutter_demo_lhw/views/TabBarView/TabBarView3.dart';
 import 'package:flutter_demo_lhw/views/Toast/Toast.dart';
 import 'package:flutter_demo_lhw/views/routerJump/routerJump.dart';
 import 'package:flutter_demo_lhw/views/routerJump/routerJump1.dart';
@@ -127,7 +129,22 @@ class AppRouter {
           return const TabBarViewPage1();
         },
 
+      ),
+      GoRoute(
+        name: 'tabbarview2',
+        path: '/tabbarview2',
+        builder: (BuildContext context, GoRouterState state) {
+          return const TabBarViewPage2();
+        },
+      ),
+      GoRoute(
+        name: 'tabbarview3',
+        path: '/tabbarview3',
+        builder: (BuildContext context, GoRouterState state) {
+          return const TabBarViewPage3();
+        },
       )
+
 
 
 
