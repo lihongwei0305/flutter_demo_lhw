@@ -8,6 +8,7 @@ import 'package:flutter_demo_lhw/views/Input/Input.dart';
 import 'package:flutter_demo_lhw/views/Other/other.dart';
 import 'package:flutter_demo_lhw/views/Picker/Picker.dart';
 import 'package:flutter_demo_lhw/views/SizeBox/SizeBox.dart';
+import 'package:flutter_demo_lhw/views/SliverAppBar/SliverAppBar.dart';
 import 'package:flutter_demo_lhw/views/TabBarView/TabBarView.dart';
 import 'package:flutter_demo_lhw/views/TabBarView/TabBarView1.dart';
 import 'package:flutter_demo_lhw/views/TabBarView/TabBarView2.dart';
@@ -143,7 +144,17 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const TabBarViewPage3();
         },
+      ),
+
+      GoRoute(
+        name: 'sliverappbar',
+        path: '/sliverappbar',
+        builder: (BuildContext context, GoRouterState state) {
+          return const SliverAppBarPage();
+        },
       )
+
+
 
 
 
